@@ -444,7 +444,7 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  -webkit-appearance: button;
+  appearance: button;
 }
 ::-webkit-input-placeholder {
   font-size: 14px;
@@ -469,11 +469,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
 }
 p {
-  -webkit-hyphens: auto;
-  -webkit-hyphenate-character: "\2010";
-  -webkit-hyphenate-limit-after: 1;
-  -webkit-hyphenate-limit-before: 3;
-  -moz-hyphens: auto;
+  hyphens: auto;
+  hyphenate-character: "\2010";
+  hyphenate-limit-after: 1;
+  hyphenate-limit-before: 3;
 }
 .ir {
   display: block;
