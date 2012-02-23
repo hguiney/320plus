@@ -128,16 +128,16 @@ __________________________________________________________ */
 .monospace {
   font-family: "Monaco", Courier New, monospace;
 }
-.clearfix {
+.content {
   zoom: 1;
 }
-.clearfix:before, .clearfix:after {
+.content:before, .content:after {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
-.clearfix:after {
+.content:after {
   clear: both;
 }
 html {
@@ -490,7 +490,7 @@ p {
   display: none;
   visibility: hidden;
 }
-.visuallyhidden {
+.implied {
   position: absolute;
   margin: -1px;
   padding: 0;
@@ -500,7 +500,7 @@ p {
   border: 0;
   clip: rect(0 0 0 0);
 }
-.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+.implied.disclosable:active, .implied.disclosable:focus {
   position: static;
   margin: 0;
   height: auto;
