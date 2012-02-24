@@ -4,6 +4,14 @@
 
 
 $(document).ready(function(){
+	// iOS scale bug fix
+	MBP.scaleFix();
+	
+	// Respond.js
+	yepnope({
+		test : Modernizr.mq('(only all)'),
+		nope : ['/js/libs/respond.min.js']
+	});
 	
 	// Run Matt Kersley's jQuery Responsive menu plugin (see plugins.js)
 	if ($.fn.mobileMenu) {
