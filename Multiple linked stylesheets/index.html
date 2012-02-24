@@ -55,51 +55,60 @@
 <link rel="canonical" href="/" />
 </head>
 
-<body class="content">
-
-<header role="banner">
-<h1>320 and Up</h1>
-</header>
-
+<body>
 <div class="content">
+	<header role="banner">
+		<div class="content">
+			<hgroup>
+				<h1>320 and Up</h1>
+			</hgroup>
+		</div><!-- .content -->
+	</header>
+	<div class="content">
+		<article role="main">
+			<div class="content">
+				
+			</div>
+		</article><!-- main -->
+		<aside role="complementary">
+			<div class="content">
+				
+			</div>
+		</aside><!-- complementary -->
+	</div><!-- .content -->
+	<footer role="contentinfo">
+		<div class="content">
+			
+		</div>
+	</footer>
+</div><!-- .content -->
+<div id="scripts">
+	<!-- Scripts -->
+	<script src="/js/libs/jquery-1.6.2.min.js"></script>
+	<script src="/js/plugins.js"></script>
+	<script src="/js/script.js"></script>
+	<script src="/js/mylibs/helper.js"></script>
+	
+	<!--[if (lt IE 9) & (!IEMobile)]>
+	<script src="/js/libs/imgsizer.js"></script>
+	<![endif]-->
+	
+	<script>
+	// iOS scale bug fix
+	MBP.scaleFix();
+	
+	// Respond.js
+	yepnope({
+		test : Modernizr.mq('(only all)'),
+		nope : ['/js/libs/respond.min.js']
+	});
+	</script>
 
-<div role="main">
-</div>
-
-<div role="complementary">
-</div>
-</div>
-
-<footer role="contentinfo" class="content">
-</footer>
-
-<!-- Scripts -->
-<script src="/js/libs/jquery-1.6.2.min.js"></script>
-<script src="/js/plugins.js"></script>
-<script src="/js/script.js"></script>
-<script src="/js/mylibs/helper.js"></script>
-
-<!--[if (lt IE 9) & (!IEMobile)]>
-<script src="/js/libs/imgsizer.js"></script>
-<![endif]-->
-
-<script>
-// iOS scale bug fix
-MBP.scaleFix();
-
-// Respond.js
-yepnope({
-	test : Modernizr.mq('(only all)'),
-	nope : ['/js/libs/respond.min.js']
-});
-</script>
-
-<!-- http://mths.be/aab -->
-<script>
-var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
-(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'));
-</script>
-
-
+	<!-- http://mths.be/aab -->
+	<script>
+	var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
+	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+</div><!-- #scripts -->
 </body>
 </html>
