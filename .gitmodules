@@ -1,1 +1,4 @@
 
+[submodule "script/libs/prefixfree"]
+	path = script/libs/prefixfree
+	url = git://github.com/hguiney/prefixfree.git
